@@ -60,8 +60,6 @@ services:
       - hadoop_historyserver:/hadoop/yarn/timeline
     env_file:
       - ./hadoop.env
-    ports:
-      - "8188:8188"
 
   spark-master:
     image: bde2020/spark-master:3.0.0-hadoop3.2
